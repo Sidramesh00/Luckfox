@@ -1,0 +1,485 @@
+inbe1e-hl542av@inbe1ehl542av:~$ lsblk
+NAME        MAJ:MIN RM   SIZE RO TYPE MOUNTPOINTS
+loop0         7:0    0     4K  1 loop /snap/bare/5
+loop1         7:1    0  73.9M  1 loop /snap/core22/2216
+loop2         7:2    0    74M  1 loop /snap/core22/2292
+loop3         7:3    0  66.8M  1 loop /snap/core24/1267
+loop4         7:4    0  66.9M  1 loop /snap/core24/1349
+loop5         7:5    0   4.9M  1 loop /snap/curl/2369
+loop6         7:6    0   4.9M  1 loop /snap/curl/2384
+loop8         7:8    0 251.6M  1 loop /snap/firefox/7836
+loop9         7:9    0  18.5M  1 loop /snap/firmware-updater/210
+loop10        7:10   0 505.1M  1 loop /snap/gnome-42-2204/176
+loop11        7:11   0 531.4M  1 loop /snap/gnome-42-2204/247
+loop12        7:12   0  91.7M  1 loop /snap/gtk-common-themes/1535
+loop13        7:13   0  12.2M  1 loop /snap/snap-store/1216
+loop14        7:14   0  10.8M  1 loop /snap/snap-store/1270
+loop15        7:15   0  38.8M  1 loop /snap/snapd/21759
+loop16        7:16   0  48.1M  1 loop /snap/snapd/25935
+loop17        7:17   0   576K  1 loop /snap/snapd-desktop-integration/315
+loop18        7:18   0   576K  1 loop /snap/snapd-desktop-integration/343
+loop19        7:19   0 254.6M  1 loop /snap/firefox/7901
+sda           8:0    1  59.5G  0 disk 
+└─sda1        8:1    1  59.5G  0 part /media/inbe1e-hl542av/3834-6632
+nvme0n1     259:0    0 953.9G  0 disk 
+├─nvme0n1p1 259:1    0   499M  0 part /boot/efi
+├─nvme0n1p2 259:2    0   128M  0 part 
+├─nvme0n1p3 259:3    0   379G  0 part 
+├─nvme0n1p4 259:4    0  97.7G  0 part 
+├─nvme0n1p5 259:5    0   700M  0 part 
+├─nvme0n1p6 259:6    0 196.5G  0 part /
+└─nvme0n1p7 259:7    0 279.4G  0 part /home
+inbe1e-hl542av@inbe1ehl542av:~$ lsblk
+NAME        MAJ:MIN RM   SIZE RO TYPE MOUNTPOINTS
+loop0         7:0    0     4K  1 loop /snap/bare/5
+loop1         7:1    0  73.9M  1 loop /snap/core22/2216
+loop2         7:2    0    74M  1 loop /snap/core22/2292
+loop3         7:3    0  66.8M  1 loop /snap/core24/1267
+loop4         7:4    0  66.9M  1 loop /snap/core24/1349
+loop5         7:5    0   4.9M  1 loop /snap/curl/2369
+loop6         7:6    0   4.9M  1 loop /snap/curl/2384
+loop8         7:8    0 251.6M  1 loop /snap/firefox/7836
+loop9         7:9    0  18.5M  1 loop /snap/firmware-updater/210
+loop10        7:10   0 505.1M  1 loop /snap/gnome-42-2204/176
+loop11        7:11   0 531.4M  1 loop /snap/gnome-42-2204/247
+loop12        7:12   0  91.7M  1 loop /snap/gtk-common-themes/1535
+loop13        7:13   0  12.2M  1 loop /snap/snap-store/1216
+loop14        7:14   0  10.8M  1 loop /snap/snap-store/1270
+loop15        7:15   0  38.8M  1 loop /snap/snapd/21759
+loop16        7:16   0  48.1M  1 loop /snap/snapd/25935
+loop17        7:17   0   576K  1 loop /snap/snapd-desktop-integration/315
+loop18        7:18   0   576K  1 loop /snap/snapd-desktop-integration/343
+loop19        7:19   0 254.6M  1 loop /snap/firefox/7901
+sda           8:0    1     0B  0 disk 
+nvme0n1     259:0    0 953.9G  0 disk 
+├─nvme0n1p1 259:1    0   499M  0 part /boot/efi
+├─nvme0n1p2 259:2    0   128M  0 part 
+├─nvme0n1p3 259:3    0   379G  0 part 
+├─nvme0n1p4 259:4    0  97.7G  0 part 
+├─nvme0n1p5 259:5    0   700M  0 part 
+├─nvme0n1p6 259:6    0 196.5G  0 part /
+└─nvme0n1p7 259:7    0 279.4G  0 part /home
+inbe1e-hl542av@inbe1ehl542av:~$ cd /home/inbe1e-hl542av/Luckfox/Images/
+inbe1e-hl542av@inbe1ehl542av:~/Luckfox/Images$ ls
+blkenvflash  Ubuntu_Luckfox_Pico_Mini_A_MicroSD_250313  Ubuntu_Luckfox_Pico_Mini_A_MicroSD_250313.zip
+inbe1e-hl542av@inbe1ehl542av:~/Luckfox/Images$ mv blkenvflash Ubuntu_Luckfox_Pico_Mini_A_MicroSD_250313
+inbe1e-hl542av@inbe1ehl542av:~/Luckfox/Images$ ls
+Ubuntu_Luckfox_Pico_Mini_A_MicroSD_250313  Ubuntu_Luckfox_Pico_Mini_A_MicroSD_250313.zip
+inbe1e-hl542av@inbe1ehl542av:~/Luckfox/Images$ cd Ubuntu_Luckfox_Pico_Mini_A_MicroSD_250313/
+inbe1e-hl542av@inbe1ehl542av:~/Luckfox/Images/Ubuntu_Luckfox_Pico_Mini_A_MicroSD_250313$ ls
+blkenvflash  boot.img  download.bin  env.img  idblock.img  oem.img  rootfs.img  sd_update.txt  tftp_update.txt  uboot.img  update.img  userdata.img
+inbe1e-hl542av@inbe1ehl542av:~/Luckfox/Images/Ubuntu_Luckfox_Pico_Mini_A_MicroSD_250313$ lsblk
+NAME        MAJ:MIN RM   SIZE RO TYPE MOUNTPOINTS
+loop0         7:0    0     4K  1 loop /snap/bare/5
+loop1         7:1    0  73.9M  1 loop /snap/core22/2216
+loop2         7:2    0    74M  1 loop /snap/core22/2292
+loop3         7:3    0  66.8M  1 loop /snap/core24/1267
+loop4         7:4    0  66.9M  1 loop /snap/core24/1349
+loop5         7:5    0   4.9M  1 loop /snap/curl/2369
+loop6         7:6    0   4.9M  1 loop /snap/curl/2384
+loop8         7:8    0 251.6M  1 loop /snap/firefox/7836
+loop9         7:9    0  18.5M  1 loop /snap/firmware-updater/210
+loop10        7:10   0 505.1M  1 loop /snap/gnome-42-2204/176
+loop11        7:11   0 531.4M  1 loop /snap/gnome-42-2204/247
+loop12        7:12   0  91.7M  1 loop /snap/gtk-common-themes/1535
+loop13        7:13   0  12.2M  1 loop /snap/snap-store/1216
+loop14        7:14   0  10.8M  1 loop /snap/snap-store/1270
+loop15        7:15   0  38.8M  1 loop /snap/snapd/21759
+loop16        7:16   0  48.1M  1 loop /snap/snapd/25935
+loop17        7:17   0   576K  1 loop /snap/snapd-desktop-integration/315
+loop18        7:18   0   576K  1 loop /snap/snapd-desktop-integration/343
+loop19        7:19   0 254.6M  1 loop /snap/firefox/7901
+sda           8:0    1  59.5G  0 disk 
+└─sda1        8:1    1  59.5G  0 part /media/inbe1e-hl542av/3834-6632
+nvme0n1     259:0    0 953.9G  0 disk 
+├─nvme0n1p1 259:1    0   499M  0 part /boot/efi
+├─nvme0n1p2 259:2    0   128M  0 part 
+├─nvme0n1p3 259:3    0   379G  0 part 
+├─nvme0n1p4 259:4    0  97.7G  0 part 
+├─nvme0n1p5 259:5    0   700M  0 part 
+├─nvme0n1p6 259:6    0 196.5G  0 part /
+└─nvme0n1p7 259:7    0 279.4G  0 part /home
+inbe1e-hl542av@inbe1ehl542av:~/Luckfox/Images/Ubuntu_Luckfox_Pico_Mini_A_MicroSD_250313$ sudo ./blkenvflash /dev/sda1
+[sudo] password for inbe1e-hl542av: 
+/home/inbe1e-hl542av/Luckfox/Images/Ubuntu_Luckfox_Pico_Mini_A_MicroSD_250313/./blkenvflash:53: SyntaxWarning: invalid escape sequence '\d'
+  if m := re.search('(\d+)([BKMG])',s):
+/home/inbe1e-hl542av/Luckfox/Images/Ubuntu_Luckfox_Pico_Mini_A_MicroSD_250313/./blkenvflash:74: SyntaxWarning: invalid escape sequence '\w'
+  if m := re.search('(blkdevparts|sd_parts)=(\w+)',l):
+/home/inbe1e-hl542av/Luckfox/Images/Ubuntu_Luckfox_Pico_Mini_A_MicroSD_250313/./blkenvflash:77: SyntaxWarning: invalid escape sequence '\w'
+  l = re.sub('blkdevparts=\w+:','',l)
+/home/inbe1e-hl542av/Luckfox/Images/Ubuntu_Luckfox_Pico_Mini_A_MicroSD_250313/./blkenvflash:83: SyntaxWarning: invalid escape sequence '\d'
+  if (m := re.search('(\d+[KMG])@(\d+[KMG])\((\w+)\)',e)) or (m := re.search('(\d+[KMG])\((\w+)\)',e)):
+/home/inbe1e-hl542av/Luckfox/Images/Ubuntu_Luckfox_Pico_Mini_A_MicroSD_250313/./blkenvflash:83: SyntaxWarning: invalid escape sequence '\d'
+  if (m := re.search('(\d+[KMG])@(\d+[KMG])\((\w+)\)',e)) or (m := re.search('(\d+[KMG])\((\w+)\)',e)):
+== blkenvflash 0.0.1 ==
+writing to /dev/sda1
+   mmcblk1: env.img size:32,768/32K (offset:0/0B) imgsize:32,768 (32K)
+   mmcblk1: idblock.img size:524,288/512K (offset:32,768/32K) imgsize:188,416 (184K)
+   mmcblk1: uboot.img size:262,144/256K (offset:0/0B) imgsize:262,144 (256K)
+   mmcblk1: boot.img size:33,554,432/32M (offset:0/0B) imgsize:3,150,336 (3,150,336B)
+   mmcblk1: oem.img size:536,870,912/512M (offset:0/0B) imgsize:113,909,760 (111,240K)
+   mmcblk1: userdata.img size:268,435,456/256M (offset:0/0B) imgsize:9,999,360 (9,765K)
+   mmcblk1: rootfs.img size:6,442,450,944/6G (offset:0/0B) imgsize:1,136,914,432 (1,110,268K)
+done.
+inbe1e-hl542av@inbe1ehl542av:~/Luckfox/Images/Ubuntu_Luckfox_Pico_Mini_A_MicroSD_250313$ sync
+inbe1e-hl542av@inbe1ehl542av:~/Luckfox/Images/Ubuntu_Luckfox_Pico_Mini_A_MicroSD_250313$ sudo umount /dev/sda1
+umount: /dev/sda1: not mounted.
+inbe1e-hl542av@inbe1ehl542av:~/Luckfox/Images/Ubuntu_Luckfox_Pico_Mini_A_MicroSD_250313$ lsblk
+NAME        MAJ:MIN RM   SIZE RO TYPE MOUNTPOINTS
+loop0         7:0    0     4K  1 loop /snap/bare/5
+loop1         7:1    0  73.9M  1 loop /snap/core22/2216
+loop2         7:2    0    74M  1 loop /snap/core22/2292
+loop3         7:3    0  66.8M  1 loop /snap/core24/1267
+loop4         7:4    0  66.9M  1 loop /snap/core24/1349
+loop5         7:5    0   4.9M  1 loop /snap/curl/2369
+loop6         7:6    0   4.9M  1 loop /snap/curl/2384
+loop8         7:8    0 251.6M  1 loop /snap/firefox/7836
+loop9         7:9    0  18.5M  1 loop /snap/firmware-updater/210
+loop10        7:10   0 505.1M  1 loop /snap/gnome-42-2204/176
+loop11        7:11   0 531.4M  1 loop /snap/gnome-42-2204/247
+loop12        7:12   0  91.7M  1 loop /snap/gtk-common-themes/1535
+loop13        7:13   0  12.2M  1 loop /snap/snap-store/1216
+loop14        7:14   0  10.8M  1 loop /snap/snap-store/1270
+loop15        7:15   0  38.8M  1 loop /snap/snapd/21759
+loop16        7:16   0  48.1M  1 loop /snap/snapd/25935
+loop17        7:17   0   576K  1 loop /snap/snapd-desktop-integration/315
+loop18        7:18   0   576K  1 loop /snap/snapd-desktop-integration/343
+loop19        7:19   0 254.6M  1 loop /snap/firefox/7901
+sda           8:0    1  59.5G  0 disk 
+└─sda1        8:1    1  59.5G  0 part 
+nvme0n1     259:0    0 953.9G  0 disk 
+├─nvme0n1p1 259:1    0   499M  0 part /boot/efi
+├─nvme0n1p2 259:2    0   128M  0 part 
+├─nvme0n1p3 259:3    0   379G  0 part 
+├─nvme0n1p4 259:4    0  97.7G  0 part 
+├─nvme0n1p5 259:5    0   700M  0 part 
+├─nvme0n1p6 259:6    0 196.5G  0 part /
+└─nvme0n1p7 259:7    0 279.4G  0 part /home
+inbe1e-hl542av@inbe1ehl542av:~/Luckfox/Images/Ubuntu_Luckfox_Pico_Mini_A_MicroSD_250313$ sudo ./blkenvflash /dev/sda
+/home/inbe1e-hl542av/Luckfox/Images/Ubuntu_Luckfox_Pico_Mini_A_MicroSD_250313/./blkenvflash:53: SyntaxWarning: invalid escape sequence '\d'
+  if m := re.search('(\d+)([BKMG])',s):
+/home/inbe1e-hl542av/Luckfox/Images/Ubuntu_Luckfox_Pico_Mini_A_MicroSD_250313/./blkenvflash:74: SyntaxWarning: invalid escape sequence '\w'
+  if m := re.search('(blkdevparts|sd_parts)=(\w+)',l):
+/home/inbe1e-hl542av/Luckfox/Images/Ubuntu_Luckfox_Pico_Mini_A_MicroSD_250313/./blkenvflash:77: SyntaxWarning: invalid escape sequence '\w'
+  l = re.sub('blkdevparts=\w+:','',l)
+/home/inbe1e-hl542av/Luckfox/Images/Ubuntu_Luckfox_Pico_Mini_A_MicroSD_250313/./blkenvflash:83: SyntaxWarning: invalid escape sequence '\d'
+  if (m := re.search('(\d+[KMG])@(\d+[KMG])\((\w+)\)',e)) or (m := re.search('(\d+[KMG])\((\w+)\)',e)):
+/home/inbe1e-hl542av/Luckfox/Images/Ubuntu_Luckfox_Pico_Mini_A_MicroSD_250313/./blkenvflash:83: SyntaxWarning: invalid escape sequence '\d'
+  if (m := re.search('(\d+[KMG])@(\d+[KMG])\((\w+)\)',e)) or (m := re.search('(\d+[KMG])\((\w+)\)',e)):
+== blkenvflash 0.0.1 ==
+writing to /dev/sda
+   mmcblk1: env.img size:32,768/32K (offset:0/0B) imgsize:32,768 (32K)
+   mmcblk1: idblock.img size:524,288/512K (offset:32,768/32K) imgsize:188,416 (184K)
+   mmcblk1: uboot.img size:262,144/256K (offset:0/0B) imgsize:262,144 (256K)
+   mmcblk1: boot.img size:33,554,432/32M (offset:0/0B) imgsize:3,150,336 (3,150,336B)
+   mmcblk1: oem.img size:536,870,912/512M (offset:0/0B) imgsize:113,909,760 (111,240K)
+   mmcblk1: userdata.img size:268,435,456/256M (offset:0/0B) imgsize:9,999,360 (9,765K)
+   mmcblk1: rootfs.img size:6,442,450,944/6G (offset:0/0B) imgsize:1,136,914,432 (1,110,268K)
+done.
+inbe1e-hl542av@inbe1ehl542av:~/Luckfox/Images/Ubuntu_Luckfox_Pico_Mini_A_MicroSD_250313$ sync
+inbe1e-hl542av@inbe1ehl542av:~/Luckfox/Images/Ubuntu_Luckfox_Pico_Mini_A_MicroSD_250313$ ping 172.32.0.93
+PING 172.32.0.93 (172.32.0.93) 56(84) bytes of data.
+^C
+--- 172.32.0.93 ping statistics ---
+9 packets transmitted, 0 received, 100% packet loss, time 8198ms
+
+inbe1e-hl542av@inbe1ehl542av:~/Luckfox/Images/Ubuntu_Luckfox_Pico_Mini_A_MicroSD_250313$ ping 172.32.0.93
+PING 172.32.0.93 (172.32.0.93) 56(84) bytes of data.
+^C
+--- 172.32.0.93 ping statistics ---
+7 packets transmitted, 0 received, 100% packet loss, time 6134ms
+
+inbe1e-hl542av@inbe1ehl542av:~/Luckfox/Images/Ubuntu_Luckfox_Pico_Mini_A_MicroSD_250313$ ip a
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet 127.0.0.1/8 scope host lo
+       valid_lft forever preferred_lft forever
+    inet6 ::1/128 scope host noprefixroute 
+       valid_lft forever preferred_lft forever
+3: wlp0s20f3: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UP group default qlen 1000
+    link/ether 6c:94:66:f5:e2:36 brd ff:ff:ff:ff:ff:ff
+    inet 10.236.49.115/24 brd 10.236.49.255 scope global dynamic noprefixroute wlp0s20f3
+       valid_lft 2760sec preferred_lft 2760sec
+    inet6 2401:4900:9396:d2b2:f3eb:1b58:7d36:5ee/64 scope global temporary dynamic 
+       valid_lft 6803sec preferred_lft 6803sec
+    inet6 2401:4900:9396:d2b2:57b4:2815:6e4c:383b/64 scope global dynamic mngtmpaddr noprefixroute 
+       valid_lft 6803sec preferred_lft 6803sec
+    inet6 fe80::2046:87cb:943c:2cd6/64 scope link noprefixroute 
+       valid_lft forever preferred_lft forever
+32: enxae09c91ffcf4: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc fq_codel state UNKNOWN group default qlen 1000
+    link/ether ae:09:c9:1f:fc:f4 brd ff:ff:ff:ff:ff:ff
+    inet6 fe80::710d:99a3:7d3d:6db9/64 scope link noprefixroute 
+       valid_lft forever preferred_lft forever
+inbe1e-hl542av@inbe1ehl542av:~/Luckfox/Images/Ubuntu_Luckfox_Pico_Mini_A_MicroSD_250313$ ip a
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet 127.0.0.1/8 scope host lo
+       valid_lft forever preferred_lft forever
+    inet6 ::1/128 scope host noprefixroute 
+       valid_lft forever preferred_lft forever
+3: wlp0s20f3: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UP group default qlen 1000
+    link/ether 6c:94:66:f5:e2:36 brd ff:ff:ff:ff:ff:ff
+    inet 10.236.49.115/24 brd 10.236.49.255 scope global dynamic noprefixroute wlp0s20f3
+       valid_lft 2728sec preferred_lft 2728sec
+    inet6 2401:4900:9396:d2b2:f3eb:1b58:7d36:5ee/64 scope global temporary dynamic 
+       valid_lft 6771sec preferred_lft 6771sec
+    inet6 2401:4900:9396:d2b2:57b4:2815:6e4c:383b/64 scope global dynamic mngtmpaddr noprefixroute 
+       valid_lft 6771sec preferred_lft 6771sec
+    inet6 fe80::2046:87cb:943c:2cd6/64 scope link noprefixroute 
+       valid_lft forever preferred_lft forever
+32: enxae09c91ffcf4: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc fq_codel state UNKNOWN group default qlen 1000
+    link/ether ae:09:c9:1f:fc:f4 brd ff:ff:ff:ff:ff:ff
+inbe1e-hl542av@inbe1ehl542av:~/Luckfox/Images/Ubuntu_Luckfox_Pico_Mini_A_MicroSD_250313$ ping 172.32.0.93
+PING 172.32.0.93 (172.32.0.93) 56(84) bytes of data.
+^C
+--- 172.32.0.93 ping statistics ---
+12 packets transmitted, 0 received, 100% packet loss, time 11251ms
+
+inbe1e-hl542av@inbe1ehl542av:~/Luckfox/Images/Ubuntu_Luckfox_Pico_Mini_A_MicroSD_250313$ ip a
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet 127.0.0.1/8 scope host lo
+       valid_lft forever preferred_lft forever
+    inet6 ::1/128 scope host noprefixroute 
+       valid_lft forever preferred_lft forever
+3: wlp0s20f3: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UP group default qlen 1000
+    link/ether 6c:94:66:f5:e2:36 brd ff:ff:ff:ff:ff:ff
+    inet 10.236.49.115/24 brd 10.236.49.255 scope global dynamic noprefixroute wlp0s20f3
+       valid_lft 2672sec preferred_lft 2672sec
+    inet6 2401:4900:9396:d2b2:f3eb:1b58:7d36:5ee/64 scope global temporary dynamic 
+       valid_lft 6715sec preferred_lft 6715sec
+    inet6 2401:4900:9396:d2b2:57b4:2815:6e4c:383b/64 scope global dynamic mngtmpaddr noprefixroute 
+       valid_lft 6715sec preferred_lft 6715sec
+    inet6 fe80::2046:87cb:943c:2cd6/64 scope link noprefixroute 
+       valid_lft forever preferred_lft forever
+32: enxae09c91ffcf4: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc fq_codel state UNKNOWN group default qlen 1000
+    link/ether ae:09:c9:1f:fc:f4 brd ff:ff:ff:ff:ff:ff
+inbe1e-hl542av@inbe1ehl542av:~/Luckfox/Images/Ubuntu_Luckfox_Pico_Mini_A_MicroSD_250313$ sudo ip addr add 172.32.0.100/24 dev enxae09c91ffcf4
+inbe1e-hl542av@inbe1ehl542av:~/Luckfox/Images/Ubuntu_Luckfox_Pico_Mini_A_MicroSD_250313$ ping 172.32.0.93
+PING 172.32.0.93 (172.32.0.93) 56(84) bytes of data.
+From 172.32.0.100 icmp_seq=1 Destination Host Unreachable
+From 172.32.0.100 icmp_seq=2 Destination Host Unreachable
+From 172.32.0.100 icmp_seq=3 Destination Host Unreachable
+From 172.32.0.100 icmp_seq=4 Destination Host Unreachable
+^C
+--- 172.32.0.93 ping statistics ---
+5 packets transmitted, 0 received, +4 errors, 100% packet loss, time 4061ms
+pipe 4
+inbe1e-hl542av@inbe1ehl542av:~/Luckfox/Images/Ubuntu_Luckfox_Pico_Mini_A_MicroSD_250313$ sudo ip addr flush dev enxae09c91ffcf4
+inbe1e-hl542av@inbe1ehl542av:~/Luckfox/Images/Ubuntu_Luckfox_Pico_Mini_A_MicroSD_250313$ sudo ip addr add 172.32.0.100/24 dev enxae09c91ffcf4
+inbe1e-hl542av@inbe1ehl542av:~/Luckfox/Images/Ubuntu_Luckfox_Pico_Mini_A_MicroSD_250313$ sudo ip link set dev enxae09c91ffcf4 up
+inbe1e-hl542av@inbe1ehl542av:~/Luckfox/Images/Ubuntu_Luckfox_Pico_Mini_A_MicroSD_250313$ ping 172.32.0.93
+PING 172.32.0.93 (172.32.0.93) 56(84) bytes of data.
+From 172.32.0.100 icmp_seq=1 Destination Host Unreachable
+From 172.32.0.100 icmp_seq=2 Destination Host Unreachable
+From 172.32.0.100 icmp_seq=3 Destination Host Unreachable
+^C
+--- 172.32.0.93 ping statistics ---
+5 packets transmitted, 0 received, +3 errors, 100% packet loss, time 4108ms
+pipe 4
+inbe1e-hl542av@inbe1ehl542av:~/Luckfox/Images/Ubuntu_Luckfox_Pico_Mini_A_MicroSD_250313$ ssh root@172.32.0.93
+ssh: connect to host 172.32.0.93 port 22: No route to host
+inbe1e-hl542av@inbe1ehl542av:~/Luckfox/Images/Ubuntu_Luckfox_Pico_Mini_A_MicroSD_250313$ sudo nmcli connection add type ethernet ifname enxae09c91ffcf4 ipv4.method manual ipv4.addresses 172.32.0.100/16 name "Luckfox"
+Error: invalid <setting>.<property> 'name'.
+inbe1e-hl542av@inbe1ehl542av:~/Luckfox/Images/Ubuntu_Luckfox_Pico_Mini_A_MicroSD_250313$ sudo nmcli connection add type ethernet ifname enxae09c91ffcf4 ipv4.method manual ipv4.addresses 172.32.0.100/16 con-name "Luckfox"
+Connection 'Luckfox' (b7bc8006-3051-4e27-8036-a20d20413a12) successfully added.
+inbe1e-hl542av@inbe1ehl542av:~/Luckfox/Images/Ubuntu_Luckfox_Pico_Mini_A_MicroSD_250313$ sudo nmcli connection up "Luckfox"
+Connection successfully activated (D-Bus active path: /org/freedesktop/NetworkManager/ActiveConnection/234)
+inbe1e-hl542av@inbe1ehl542av:~/Luckfox/Images/Ubuntu_Luckfox_Pico_Mini_A_MicroSD_250313$ ping 172.32.0.93
+PING 172.32.0.93 (172.32.0.93) 56(84) bytes of data.
+^C
+--- 172.32.0.93 ping statistics ---
+17 packets transmitted, 0 received, 100% packet loss, time 16380ms
+
+inbe1e-hl542av@inbe1ehl542av:~/Luckfox/Images/Ubuntu_Luckfox_Pico_Mini_A_MicroSD_250313$ ping 172.32.0.93
+PING 172.32.0.93 (172.32.0.93) 56(84) bytes of data.
+^C
+--- 172.32.0.93 ping statistics ---
+7 packets transmitted, 0 received, 100% packet loss, time 6126ms
+
+inbe1e-hl542av@inbe1ehl542av:~/Luckfox/Images/Ubuntu_Luckfox_Pico_Mini_A_MicroSD_250313$ ping 172.32.0.93
+PING 172.32.0.93 (172.32.0.93) 56(84) bytes of data.
+^C
+--- 172.32.0.93 ping statistics ---
+15 packets transmitted, 0 received, 100% packet loss, time 14353ms
+
+inbe1e-hl542av@inbe1ehl542av:~/Luckfox/Images/Ubuntu_Luckfox_Pico_Mini_A_MicroSD_250313$ ssh root@172.32.0.93
+^C
+inbe1e-hl542av@inbe1ehl542av:~/Luckfox/Images/Ubuntu_Luckfox_Pico_Mini_A_MicroSD_250313$ ssh root@luckfox.local
+ssh: Could not resolve hostname luckfox.local: Name or service not known
+inbe1e-hl542av@inbe1ehl542av:~/Luckfox/Images/Ubuntu_Luckfox_Pico_Mini_A_MicroSD_250313$ ssh root@172.32.0.93
+^C
+inbe1e-hl542av@inbe1ehl542av:~/Luckfox/Images/Ubuntu_Luckfox_Pico_Mini_A_MicroSD_250313$ arp -a
+_gateway (10.236.49.204) at a6:dd:09:cf:7b:ec [ether] on wlp0s20f3
+inbe1e-hl542av@inbe1ehl542av:~/Luckfox/Images/Ubuntu_Luckfox_Pico_Mini_A_MicroSD_250313$ ip a
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet 127.0.0.1/8 scope host lo
+       valid_lft forever preferred_lft forever
+    inet6 ::1/128 scope host noprefixroute 
+       valid_lft forever preferred_lft forever
+3: wlp0s20f3: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UP group default qlen 1000
+    link/ether 6c:94:66:f5:e2:36 brd ff:ff:ff:ff:ff:ff
+    inet 10.236.49.115/24 brd 10.236.49.255 scope global dynamic noprefixroute wlp0s20f3
+       valid_lft 1828sec preferred_lft 1828sec
+    inet6 2401:4900:9396:d2b2:f3eb:1b58:7d36:5ee/64 scope global temporary dynamic 
+       valid_lft 6968sec preferred_lft 6968sec
+    inet6 2401:4900:9396:d2b2:57b4:2815:6e4c:383b/64 scope global dynamic mngtmpaddr noprefixroute 
+       valid_lft 6968sec preferred_lft 6968sec
+    inet6 fe80::2046:87cb:943c:2cd6/64 scope link noprefixroute 
+       valid_lft forever preferred_lft forever
+33: enx6a6ae99c4464: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc fq_codel state UNKNOWN group default qlen 1000
+    link/ether 6a:6a:e9:9c:44:64 brd ff:ff:ff:ff:ff:ff
+inbe1e-hl542av@inbe1ehl542av:~/Luckfox/Images/Ubuntu_Luckfox_Pico_Mini_A_MicroSD_250313$ sudo ip addr add 172.32.0.100/24 dev enx6a6ae99c4464
+inbe1e-hl542av@inbe1ehl542av:~/Luckfox/Images/Ubuntu_Luckfox_Pico_Mini_A_MicroSD_250313$ sudo ip link set dev enx6a6ae99c4464 up
+inbe1e-hl542av@inbe1ehl542av:~/Luckfox/Images/Ubuntu_Luckfox_Pico_Mini_A_MicroSD_250313$ ping 172.32.0.93
+PING 172.32.0.93 (172.32.0.93) 56(84) bytes of data.
+From 172.32.0.100 icmp_seq=1 Destination Host Unreachable
+From 172.32.0.100 icmp_seq=2 Destination Host Unreachable
+From 172.32.0.100 icmp_seq=3 Destination Host Unreachable
+^C
+--- 172.32.0.93 ping statistics ---
+5 packets transmitted, 0 received, +3 errors, 100% packet loss, time 4102ms
+pipe 4
+inbe1e-hl542av@inbe1ehl542av:~/Luckfox/Images/Ubuntu_Luckfox_Pico_Mini_A_MicroSD_250313$ ssh root@172.32.0.93
+ssh: connect to host 172.32.0.93 port 22: No route to host
+inbe1e-hl542av@inbe1ehl542av:~/Luckfox/Images/Ubuntu_Luckfox_Pico_Mini_A_MicroSD_250313$ cd
+inbe1e-hl542av@inbe1ehl542av:~$ ping 172.32.0.70
+PING 172.32.0.70 (172.32.0.70) 56(84) bytes of data.
+64 bytes from 172.32.0.70: icmp_seq=1 ttl=64 time=0.979 ms
+64 bytes from 172.32.0.70: icmp_seq=2 ttl=64 time=0.587 ms
+64 bytes from 172.32.0.70: icmp_seq=3 ttl=64 time=0.329 ms
+^C
+--- 172.32.0.70 ping statistics ---
+3 packets transmitted, 3 received, 0% packet loss, time 2060ms
+rtt min/avg/max/mdev = 0.329/0.631/0.979/0.267 ms
+inbe1e-hl542av@inbe1ehl542av:~$ ssh pico@172.32.0.70
+The authenticity of host '172.32.0.70 (172.32.0.70)' can't be established.
+ED25519 key fingerprint is SHA256:eIrwf8uwMfUyv6HcBtBqmi+K9yAai2ZtFqLD977Et0I.
+This key is not known by any other names.
+Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
+Warning: Permanently added '172.32.0.70' (ED25519) to the list of known hosts.
+pico@172.32.0.70's password: 
+
+
+                                ====               ====
+                              ========           ========
+                              ===========     ===========
+                              ====  ===============  ====
+                              ====     =========     ====
+                              ====                   ====
+                             =                           =
+                              ============    ============
+                            ================================
+                          ======      ==========      =======
+                          =====         =======          =====
+                          ==========      ===     ===========
+                            ============        ============
+                                  =======      ======
+                                    ======    =====
+                                      ============
+                                        ========
+                                          ====
+
+
+  ===        ===    ===     =======    ===    ===  =========      ======    ===       ===
+  ===        ===    ===   ===     ===  ===  ===    ===         ===      ===   ===   ===
+  ===        ===    ===  ===           ======      ===        ===        ===    =====
+  ===        ===    ===  ===           ======      =========  ===        ===    =====
+  ===        ===    ===   ===     ===  ===  ===    ===         ===      ===   ===   ===
+  =========    ======       =======    ===    ===  ===            ======    ===       ===
+
+
+Welcome to Ubuntu 22.04.3 LTS (GNU/Linux 5.10.160 armv7l)
+
+ * Documentation:  https://wiki.luckfox.com
+ * Management:     https://www.luckfox.com
+
+This system has been minimized by removing packages and content that are
+not required on a system that users do not log into.
+
+To restore this content, you can run the 'unminimize' command.
+
+The programs included with the Ubuntu system are free software;
+the exact distribution terms for each program are described in the
+individual files in /usr/share/doc/*/copyright.
+
+Ubuntu comes with ABSOLUTELY NO WARRANTY, to the extent permitted by
+applicable law.
+
+pico@luckfox:~$ 
+pico@luckfox:~$ 
+pico@luckfox:~$ ls
+pico@luckfox:~$ cd /home/
+pico@luckfox:/home$ ls
+pico
+pico@luckfox:/home$ cd pico/
+pico@luckfox:~$ ls
+pico@luckfox:~$ cd /sys/class/
+android_usb/  devfreq/      extcon/       i2c-adapter/  mdio_bus/     mpi/          phy/          rk_dma_heap/  scsi_host/    spidev/       ubi/          vcodec_class/ 
+backlight/    devlink/      gpio/         i2c-dev/      mem/          mpp_class/    power_supply/ rtc/          sound/        thermal/      udc/          video4linux/  
+bdi/          dma/          graphics/     input/        misc/         mtd/          pwm/          scsi_device/  spi_master/   tty/          usb_role/     vtconsole/    
+block/        drm/          hidg/         leds/         mmc_host/     net/          regulator/    scsi_disk/    spi_slave/    u_audio/      vc/           watchdog/     
+pico@luckfox:~$ cd /sys/class/leds/
+pico@luckfox:/sys/class/leds$ ls
+work
+pico@luckfox:/sys/class/leds$ cd work
+pico@luckfox:/sys/class/leds/work$ ls
+brightness  device  invert  max_brightness  power  subsystem  trigger  uevent
+pico@luckfox:/sys/class/leds/work$ cd /sys/class/
+pico@luckfox:/sys/class$ cd i2c-
+i2c-adapter/ i2c-dev/     
+pico@luckfox:/sys/class$ cd i2c-dev/
+pico@luckfox:/sys/class/i2c-dev$ ls
+i2c-4
+pico@luckfox:/sys/class/i2c-dev$ cd i2c-4
+pico@luckfox:/sys/class/i2c-dev/i2c-4$ ls
+dev  device  name  power  subsystem  uevent
+pico@luckfox:/sys/class/i2c-dev/i2c-4$ date
+Wed Sep 20 01:11:39 CST 2023
+pico@luckfox:/sys/class/i2c-dev/i2c-4$ cd /sys/class/tty/
+pico@luckfox:/sys/class/tty$ ls
+console  tty0   tty11  tty14  tty17  tty2   tty22  tty25  tty28  tty30  tty33  tty36  tty39  tty41  tty44  tty47  tty5   tty52  tty55  tty58  tty60  tty63  tty9
+ptmx     tty1   tty12  tty15  tty18  tty20  tty23  tty26  tty29  tty31  tty34  tty37  tty4   tty42  tty45  tty48  tty50  tty53  tty56  tty59  tty61  tty7   ttyFIQ0
+tty      tty10  tty13  tty16  tty19  tty21  tty24  tty27  tty3   tty32  tty35  tty38  tty40  tty43  tty46  tty49  tty51  tty54  tty57  tty6   tty62  tty8
+pico@luckfox:/sys/class/tty$ cd ..
+pico@luckfox:/sys/class$ cd watchdog/
+pico@luckfox:/sys/class/watchdog$ ls
+pico@luckfox:/sys/class/watchdog$ ls /dev/
+Display all 187 possibilities? (y or n)
+block/           loop-control     mmcblk1p7        ram7             tty13            tty30            tty48            tty8             vcsa1            video14
+char/            loop0            mpi/             ram8             tty14            tty31            tty49            tty9             vcsa2            video15
+console          loop1            mpp_service      ram9             tty15            tty32            tty5             ttyFIQ0          vcsa3            video16
+cpu_dma_latency  loop2            null             random           tty16            tty33            tty50            ubi_ctrl         vcsa4            video17
+disk/            loop3            ptmx             rga              tty17            tty34            tty51            urandom          vcsa5            video18
+fd/              loop4            pts/             rk_dma_heap/     tty18            tty35            tty52            usb-ffs/         vcsa6            video19
+full             loop5            ram0             rknpu            tty19            tty36            tty53            v4l/             vcsu             video2
+gpiochip0        loop6            ram1             rve              tty2             tty37            tty54            v4l-subdev0      vcsu1            video20
+gpiochip1        loop7            ram10            shm/             tty20            tty38            tty55            v4l-subdev1      vcsu2            video3
+gpiochip2        media0           ram11            snd/             tty21            tty39            tty56            v4l-subdev2      vcsu3            video4
+gpiochip3        media1           ram12            stderr           tty22            tty4             tty57            vcodec           vcsu4            video5
+hwrng            mem              ram13            stdin            tty23            tty40            tty58            vcs              vcsu5            video6
+i2c-4            mmcblk1          ram14            stdout           tty24            tty41            tty59            vcs1             vcsu6            video7
+iio:device0      mmcblk1p1        ram15            tty              tty25            tty42            tty6             vcs2             video0           video8
+initctl          mmcblk1p2        ram2             tty0             tty26            tty43            tty60            vcs3             video1           video9
+input/           mmcblk1p3        ram3             tty1             tty27            tty44            tty61            vcs4             video10          zero
+iomux            mmcblk1p4        ram4             tty10            tty28            tty45            tty62            vcs5             video11          
+kmsg             mmcblk1p5        ram5             tty11            tty29            tty46            tty63            vcs6             video12          
+log              mmcblk1p6        ram6             tty12            tty3             tty47            tty7             vcsa             video13          
+pico@luckfox:/sys/class/watchdog$ ls /dev/gpiochip
+gpiochip0  gpiochip1  gpiochip2  gpiochip3  
+pico@luckfox:/sys/class/watchdog$ ls /dev/gpiochip0 
+/dev/gpiochip0
+pico@luckfox:/sys/class/watchdog$ cd /sys/class/gpio/gpiochip0
+pico@luckfox:/sys/class/gpio/gpiochip0$ ls
+base  device  label  ngpio  power  subsystem  uevent
+pico@luckfox:/sys/class/gpio/gpiochip0$ echo hellow
+hellow
+pico@luckfox:/sys/class/gpio/gpiochip0$ echo hi
+hi
+pico@luckfox:/sys/class/gpio/gpiochip0$ cd
+pico@luckfox:~$ ls
+pico@luckfox:~$ cd /home/
+pico@luckfox:/home$ 
+
+
